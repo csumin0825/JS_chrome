@@ -1,3 +1,8 @@
-const title = document.querySelector(".hello h1");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-title.innerText = "hello";
+function onLoginBtnClick() {
+  console.log("Hello", loginInput.value);
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
